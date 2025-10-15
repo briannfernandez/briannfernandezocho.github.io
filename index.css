@@ -1,0 +1,25 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.columna {
+    background-color: rgb(65, 178, 223);
+    border: 3px solid black;
+    padding: 2px;
+    font-family: Arial;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .columna {
+        flex: 1
+    }
+}
+
+@media (max-width: 767px) {
+    .columna {
+       flex: 100%
+    }
+}
